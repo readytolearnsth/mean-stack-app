@@ -1,0 +1,1 @@
+This MEAN stack app was created through Full Stack course
