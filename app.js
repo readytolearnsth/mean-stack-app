@@ -4,7 +4,10 @@ var path = require('path');
 
 app.set('port', 3000);
 
-app.use(express.static(path.join(__dirname, 'public'))); //thes same as app.get
+app.use(function(req, res, next)) {
+	console.log(req.method, req.url);
+	next();
+});
 
 app.get('/json', function(req, res) {
 	console.log('GET the json');
