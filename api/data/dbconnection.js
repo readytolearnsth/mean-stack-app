@@ -1,9 +1,9 @@
 var MongoClient = require('mongodb').MongoClient;
-var dburl = "mongodb://localhost:27817/meanhotel";
+var dburl = "mongodb://localhost:27017/meanhotel";
 var _connection = null;
 var open = function() {
 	MongoClient.connect(dburl, function(err, db) {
-		if (err) {
+			if (err) {
 			console.log("DB connection failed");
 			return;
 		}
@@ -19,4 +19,4 @@ var get = function() {
 module.exports = {
 	open: open,
 	get: get
-}
+};
