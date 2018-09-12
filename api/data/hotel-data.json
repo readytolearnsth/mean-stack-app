@@ -65,7 +65,10 @@
 			"name": "Tamas",
 			"id": "/user/tamas.json",
 			"review": "Great hotel",
-			"rating": 4.0
+			"rating": 4.0,
+			"_id": {
+				"$oid": "5b5709fa4766babd431946ca"
+			}
 		}
 	],
 	"services": [
