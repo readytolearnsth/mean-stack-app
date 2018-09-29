@@ -47,6 +47,7 @@ var runGeoQuery = function(req, res) {
 
 module.exports.hotelsGetAll = function(req, res) {
 
+    console.log('GET dzby');
     console.log('GET the hotels');
     console.log(req.query);
 
@@ -91,7 +92,7 @@ module.exports.hotelsGetAll = function(req, res) {
         .limit(count)
         .exec(function(err, hotels) {
             console.log(err);
-            console.log(hotels);
+            // console.log(hotels);
             if (err) {
                 console.log("Error finding hotels");
                 res
@@ -108,7 +109,7 @@ module.exports.hotelsGetAll = function(req, res) {
 
 module.exports.hotelsGetOne = function(req, res) {
     var id = req.params.hotelId;
-
+console.log("Dziuuba");
     console.log('GET hotelId', id);
 
     Hotel

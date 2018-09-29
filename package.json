@@ -22,12 +22,16 @@
   "homepage": "https://github.com/readytolearnsth/mean-stack-app#readme",
   "dependencies": {
     "angular": "^1.7.4",
+    "angular-jwt": "^0.1.10",
     "angular-route": "^1.7.4",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.14.2",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
+    "jsonwebtoken": "^8.3.0",
     "mongodb": "^2.2.33",
-    "mongoose": "^4.4.8"
+    "mongoose": "^4.4.8",
+    "npm": "^6.4.1"
   },
   "devDependencies": {
     "mocha": "^2.3.3"
